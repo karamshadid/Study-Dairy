@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Study Diary</title>
+  <link rel="stylesheet" href="Style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.PNG" alt="logo">
+    </div>
+    <nav>
+
+      <ul>
+        <li><a href="#"> About me</a></li>
+        <li><a href="Lesson.html">HTML Lessons</a></li>
+        <li><a href="index.html">Js Lessons</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+
+    <div class="sidebar">
+      <div class="dropdown">
+
+        <ul>
+          <li class="dropdown-btn"><a href="#">Mathematical Operations</a></li>
+          <ul>
+            <li><a href="Js/Functions/gasoline.html" target="iframe1">Gasoline</a></li>
+            <li><a href="Js/Functions/Speed.html" target="iframe1">Speed</a></li>
+            <li><a href="Js/Functions/Measurment.html" target="iframe1">Measurment</a></li>
+            <li><a href="Js/Functions/gasoline.html" target="iframe1">BMI</a></li>
+          </ul>
+          <li class="dropdown-btn"><a href="#" target="">Conditions</a></li>
+          <ul>
+            <li><a href="Js/conditions/MilitaryAge.html" target="iframe1">Military Age</a></li>
+            <li><a href="Js/conditions/NumbersSum.html" target="iframe1">Numbers sum</a></li>
+            <li><a href="Js/conditions/DivisableNumber.html" target="iframe1">Divisable NUmber</a></li>
+            <li><a href="Js/conditions/HourlySalary.html" target="iframe1">Hourly Salary</a></li>
+
+          </ul>
+          <li class="dropdown-btn"><a href="#" target="">Loops</a></li>
+          <ul>
+            <li><a href="Js/loops/OddNumbers.html" target="iframe1">Odd Numbers</a></li>
+            <li><a href="Js/loops/EvenNumbers.html" target="iframe1">Even Numbers</a></li>
+            <li><a href="Js/loops/AverageSpeed.html" target="iframe1">Average Speed</a></li>
+            <li><a href="Js/loops/EvenNumbers2.html" target="iframe1">Even Numbers 2</a></li>
+            <li><a href="Js/loops/TotalAverage.html" target="iframe1">Total Average</a></li>
+            <li><a href="Js/loops/SmallestNumber.html" target="iframe1">Smallest Number</a></li>
+            <li><a href="Js/loops/Largest2Numbers.html" target="iframe1">Largest 2 Numbers</a></li>
+
+          </ul>
+          <li class="dropdown-btn"><a href="#" target="">Arrays</a></li>
+          <ul>
+            <li><a href="Js/Arrays/Arrays1.html" target="iframe1">Array1</a> </li>
+
+          </ul>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="textarea">
+
+      <iframe src=" " name="iframe1"></iframe>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>@copyright</p>
+
+  </footer>
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

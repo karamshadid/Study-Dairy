@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css" type="text/css">
+  <title>loops9</title>
+</head>
+
+<body>
+  <h1>Largest 2 EvenNumbers</h1>
+  <p>9. Make a program that asks ten numbers and in the end prints out two biggest numbers.</p>
+
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80"> <pre>  var big = Number(prompt("give a number"));
+    var secondbig = Number(prompt("giva a number"));
+    if (secondbig > big) {
+      var extra = big;
+      big = secondbig;
+      secondbig = extra;
+    } {
+
+    }
+    for (var i = 0; i < 8; i++) {
+      var number = Number(prompt("Enter a Numbers"));
+      if (big > number) {
+        big = number;
+      } else if (number > secondbig) {
+        secondbig = number;
+        big = number;
+      }
+    }
+
+    console.log("biggest number is" + big + "second biggest is" + secondbig);</pre></textarea>
+  <script>
+    var big = Number(prompt("give a number"));
+    var secondbig = Number(prompt("giva a number"));
+    if (secondbig > big) {
+      var extra = big;
+      big = secondbig;
+      secondbig = extra;
+    } {
+
+    }
+    for (var i = 0; i < 8; i++) {
+      var number = Number(prompt("Enter a Numbers"));
+      if (big > number) {
+        big = number;
+      } else if (number > secondbig) {
+        secondbig = number;
+        big = number;
+      }
+    }
+
+    console.log("biggest number is" + big + "second biggest is" + secondbig);
+  </script>
+
+
+</body>
+
+</html>

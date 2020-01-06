@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="Style.css" type="text/css">
+
+  <meta charset="utf-8">
+  <title>Array1</title>
+</head>
+
+<body>
+  <h1>Arrays 1</h1>
+  <p>1. Make an array that has 10 numbers: var numbers = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2];
+
+    a. Program prints out the numbers in the array as follows:
+
+    1. number 4
+
+    2. number -5
+
+    ...
+
+    b. Program swaps third and seventh number other way around.
+
+    c. Program calculates the sum of the numbers and prints out the result.
+
+    d. Program calculates the average of the numbers and prints out the result.
+
+    e. Program finds out the smallest number and prints it.
+
+    f. Program asks one number from the user and then counts how many times that number is in the array. Program prints out the result.
+
+    g. Program prints out all the numbers that are in the array before 0.
+
+    h. Program counts how many numbers there are after 0 and prints out the result.
+
+  </p>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <h2>Code Example</h2>
+
+  <textarea name="name" rows="8" cols="80" readonly>  var numbers = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2];
+    var text = "<ol>";
+
+    for (var i = 0; i < numbers.length; i++) {
+      text += "<li>" + numbers[i] + "</li>";
+
+    }
+    text += "</ol>"
+    document.getElementById("demo").innerHTML = text;
+
+    //exercise B----------------------------------------------
+    var extra = numbers[0];
+    numbers[0] = numbers[9];
+
+    numbers[9] = extra;
+    var text2 = "<ol>";
+
+    for (var i = 0; i < numbers.length; i++) {
+      text2 += "<li>" + numbers[i] + "</li>";
+
+    }
+    text2 += "</ol>"
+    document.getElementById("demo2").innerHTML = text2;
+
+    //excercise c-------------------------------------------------
+
+    function getSum(num, total) {
+      return (num + total);
+    }
+
+    document.getElementById("demo3").innerHTML = numbers.reduce(getSum);</textarea>
+  <script>
+    var numbers = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2];
+    var text = "<ol>";
+
+    for (var i = 0; i < numbers.length; i++) {
+      text += "<li>" + numbers[i] + "</li>";
+
+    }
+    text += "</ol>"
+    document.getElementById("demo").innerHTML = text;
+
+    //exercise B----------------------------------------------
+    var extra = numbers[0];
+    numbers[0] = numbers[9];
+
+    numbers[9] = extra;
+    var text2 = "<ol>";
+
+    for (var i = 0; i < numbers.length; i++) {
+      text2 += "<li>" + numbers[i] + "</li>";
+
+    }
+    text2 += "</ol>"
+    document.getElementById("demo2").innerHTML = text2;
+
+    //excercise c-------------------------------------------------
+
+    function getSum(num, total) {
+      return (num + total);
+    }
+
+    document.getElementById("demo3").innerHTML = numbers.reduce(getSum);
+  </script>
+
+</body>
+
+</html>

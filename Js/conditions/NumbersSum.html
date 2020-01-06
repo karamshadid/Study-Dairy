@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Number Sum</title>
+</head>
+
+<body>
+  <h1>Numbers Sum</h1>
+  <p> Make a program that asks three numbers from the user. Program prints out sum of the numbers, if any of the numbers is positive. If all the numbers are positive, also print out multiplication.
+    If all numbers are negative, text “only negatives” is printed. Handle zero as positive in this assignment.</p>
+  <form name="sum">
+    First Number <input type="number" name="First"><br>
+    Second Number <input type="number" name="Second"><br>
+    Third NUmber <input type="number" name="Third" <br>
+    <button type="button" name="button" onclick="myFunction()">Check</button>
+  </form>
+  <p id="demo"></p>
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80" readonly>  function myFunction() {
+      var num1 = Number(document.forms["sum"]["First"].value);
+      var num2 = Number(document.forms["sum"]["Second"].value);
+      var num3 = Number(document.forms["sum"]["Third"].value);
+      var num4 = "";
+      var sum = (num1 * num2 * num3);
+
+      if (sum >= 0 && num1 >= 0 || sum >= 0 && num2 >= 0 || sum >= 0 && num3 >= 0) {
+        num4 = sum;
+      } else {
+        num4 = "number is negative"
+      };
+
+
+      document.getElementById("demo").innerHTML = num4;
+    }</textarea>
+
+
+  <script>
+    function myFunction() {
+      var num1 = Number(document.forms["sum"]["First"].value);
+      var num2 = Number(document.forms["sum"]["Second"].value);
+      var num3 = Number(document.forms["sum"]["Third"].value);
+      var num4 = "";
+      var sum = (num1 * num2 * num3);
+
+      if (sum >= 0 && num1 >= 0 || sum >= 0 && num2 >= 0 || sum >= 0 && num3 >= 0) {
+        num4 = sum;
+      } else {
+        num4 = "number is negative"
+      };
+
+
+      document.getElementById("demo").innerHTML = num4;
+    }
+  </script>
+</body>
+
+</html>

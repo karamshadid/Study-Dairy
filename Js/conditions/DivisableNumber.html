@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Define number</title>
+</head>
+
+<body>
+  <h1>Divisible Number</h1>
+  <p>3. Make a program that asks one number from the user. Then the program finds out if the number is positive and is the number divisible by 2.</p>
+
+
+  <form name="check">
+    Enter Number: <input type="number" name="list">
+    <button type="button" onclick="myFunction()">Check</button>
+
+  </form>
+  <p id="demo"></p>
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80" readonly>
+    function myFunction() {
+      var num = Number(document.forms["check"]["list"].value);
+      var text;
+
+      if (num > 0 && num % 2 === 0) {
+        text = "its divisable by 2";
+
+      } else if (num < 0) {
+        text = "The number is negative";
+      } else {
+        text = "its not divisable";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+
+   </textarea>
+
+  <script>
+    function myFunction() {
+      var num = Number(document.forms["check"]["list"].value);
+      var text;
+
+      if (num > 0 && num % 2 === 0) {
+        text = "its divisable by 2";
+
+      } else if (num < 0) {
+        text = "The number is negative";
+      } else {
+        text = "its not divisable";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+
+
+</body>
+
+</html>

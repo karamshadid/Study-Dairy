@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>loops</title>
+</head>
+
+<body>
+  <p id="result"></p>
+  <p id="result2"></p>
+
+  <p id="result3"></p>
+  <p id="result4"></p>
+  <script>
+    var text = "";
+    var text2="";
+
+    for (var i = 0; i < 5; i++) {
+      text += "The number is " + i + "<br>";
+
+
+
+
+    }
+
+
+    document.getElementById("result").innerHTML = text;
+
+//....................................................................
+    for (var i =100 ; i>=50 ;i--){
+
+        text2 += "The number is " + i + "<br>";
+
+    }
+
+        document.getElementById("result2").innerHTML = text2;
+
+//....................................................................
+
+var text3 ="";
+var i = 0;
+while(i<5){
+  text3+= "the number is " +i+"<br>";
+  i++;
+
+
+}
+
+document.getElementById("result3").innerHTML= text3;
+
+//.......................................................................
+
+
+
+
+
+  </script>
+</body>
+
+</html>

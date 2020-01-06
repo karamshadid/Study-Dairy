@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css" type="text/css">
+
+  <title>Total Average</title>
+</head>
+
+<body>
+  <h1>Total Average</h1>
+  <p>5. Make a program that asks numbers from the user,
+    until user gives 0 and then program ends. In the end program prints out average of the numbers.</p>
+  <textarea name="name" rows="8" cols="80" readonly>  var count = 0;
+    var sum = 0;
+    do {
+
+      var number = Number(prompt("enter number"));
+      if (number == 0) {
+        break
+      }
+      sum += number;
+      count++;
+
+    } while (number > 0);
+    var average = sum / count;
+
+    console.log(average);</textarea>
+  <script>
+    var count = 0;
+    var sum = 0;
+    do {
+
+      var number = Number(prompt("enter number"));
+      if (number == 0) {
+        break
+      }
+      sum += number;
+      count++;
+
+    } while (number > 0);
+    var average = sum / count;
+
+    console.log(average);
+  </script>
+
+
+
+</body>
+
+</html>

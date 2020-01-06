@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>If Statement</title>
+</head>
+
+<body>
+  <h1>If statement</h1>
+  <p id="answer"> </p>
+
+  <script>
+    var age = 70;
+    var text = "";
+    if (age <= 17) {
+      text = "you are still a baby !";
+    }
+else if(age < 65){
+  text= "you are and adult ";
+}
+
+    else {
+      text = "your are elderly "
+    };
+    text +="Here is the end "
+    document.getElementById("answer").innerHTML = text;
+  </script>
+</body>
+
+</html>

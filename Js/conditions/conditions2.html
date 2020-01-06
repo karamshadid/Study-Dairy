@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Conditions2</title>
+</head>
+
+<body>
+  <h1>If statement</h1>
+  <p id="answer"> </p>
+
+  <script>
+    var salary = 1000;
+    var age = 60;
+    if (age < 65) {
+      if (salary >= 3000) {
+        document.getElementById("answer").innerHTML = "life goes on.";
+      } else {
+        document.getElementById("answer").innerHTML = "Lucky Bastard";
+      }
+    }else{
+      document.getElementById("answer").innerHTML="Happy Retirement"
+    }
+  </script>
+</body>
+
+</html>

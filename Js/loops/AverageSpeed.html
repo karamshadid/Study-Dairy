@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css" type="text/css">
+  <title>Average Speed</title>
+</head>
+
+<body>
+  <h1>Average Speed</h1>
+
+  <p>3. Make a program that asks repeatedly from the user the distance (km) and time (h) and calculates average speed.
+    The program ends when user gives 0 for the distance. (After getting 0, the program does not ask anything from the user.)</p>
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80" readonly>
+        do {
+          var distance = Number(prompt("Distance"));
+          if(distance==0){
+            break;
+          }
+          var time = Number(prompt("time"));
+          var average = distance / time;
+          console.log(average);
+        }while (distance > 0);</textarea>
+
+
+  <script>
+    do {
+      var distance = Number(prompt("Distance"));
+      if (distance == 0) {
+        break;
+      }
+      var time = Number(prompt("time"));
+      var average = distance / time;
+      console.log(average);
+    } while (distance > 0);
+  </script>
+
+</body>
+
+</html>

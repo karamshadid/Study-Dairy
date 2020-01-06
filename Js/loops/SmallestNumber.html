@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css" type="text/css">
+
+  <title>Smallest NUmber </title>
+</head>
+
+<body>
+  <h1>Smallest Number</h1>
+  <p>8. Make a program that asks first how many numbers user wants to give to the program. After that program asks those numbers.
+    In the end program prints out the smallest number that user gave.</p>
+
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80"> <pre>  var times;
+  var small;
+  var number;
+
+  times = Number(prompt("how many numbers you want to give?"));
+  small = Number(prompt("give a number"));
+  for (var i = 0; i < times - 1; i++) {
+    number = Number(prompt("give a number"));
+
+    if (number < small) {
+      small = number;
+    }
+  }
+  console.log("smallest number is " + small);</pre></textarea>
+
+  <script>
+    var times;
+    var small;
+    var number;
+
+    times = Number(prompt("how many numbers you want to give?"));
+    small = Number(prompt("give a number"));
+    for (var i = 0; i < times - 1; i++) {
+      number = Number(prompt("give a number"));
+
+      if (number < small) {
+        small = number;
+      }
+    }
+    console.log("smallest number is " + small);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Array example</title>
+</head>
+<p id="demo"></p>
+
+<body>
+  <script>
+    var names = ["Chris", "Donald", "Jane", "maria", "Nicholas"];
+
+
+    console.log(names[2], names[4]);
+    console.log(names.length);
+    console.log(names);
+    var text = "<ul>";
+    for (var i = 0; i < names.length; i++) {
+      text += "<li>" + names[i] + "</li>";
+    }
+    text += "</ul> "
+    document.getElementById("demo").innerHTML = text;
+  </script>
+
+</body>
+
+</html>

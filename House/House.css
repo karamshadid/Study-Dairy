@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+canvas {
+  border: 2px solid black;
+  background-image: linear-gradient(to right, rgb(182, 238, 240), rgb(75, 146, 228));
+}
+
+;

@@ -1,0 +1,107 @@
+* {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.toparea {
+  display: flex;
+  margin-left: 30px;
+  height: 100px;
+  width: 577px;
+  background-image: repeating-linear-gradient(to bottom right, black, rgb(45, 51, 47) 0.1%, black 1%);
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  width: 900px;
+}
+
+.display {
+  flex: 1;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.power {
+  flex: 1;
+  position: relative;
+  left: 100px;
+  top: 30px;
+  color: black;
+  width: 20px;
+}
+
+i {
+  font-size: 15px;
+  padding: 5px;
+  box-shadow: 5px, 10px, 8px black;
+}
+
+i:active {
+  background-color: grey;
+  border-radius: 50px;
+}
+
+.black {
+  display: inline-block;
+  width: 40px;
+  height: 150px;
+  background-color: black;
+  border: 2px solid black;
+  z-index: 1;
+  position: relative;
+  vertical-align: top;
+}
+
+.white {
+  display: inline-block;
+  width: 60px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 5px 5px black;
+}
+
+.black.one {
+  right: 533px;
+}
+
+.black.two {
+  right: 451px;
+}
+
+.black.three {
+  right: 429px;
+}
+
+.black.four {
+  right: 345px;
+}
+
+.black.five {
+  right: 324px;
+}
+
+.black.six {
+  right: 305px;
+}
+
+.white:active, .black:active {
+  background-color: lightgrey;
+}
+
+.black:active {
+  background-color: lightgrey;
+}

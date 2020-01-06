@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  height: 100px;
+  padding: 20px 10%;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  height: 100%;
+  width: 200px;
+}
+
+nav {
+  text-align: right;
+  margin-top: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+nav ul li:hover {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid orange;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 40px;
+  margin-left: 20px;
+}
+
+main img {
+  flex: 1;
+  height: 200px;
+  padding: 20px;
+}
+
+.vert {
+  padding: 20px;
+  transform: skew(5deg, -2deg);
+  padding: 40px;
+  background-image: url("https://www.hastac.org/sites/default/files/styles/post_image/public/upload/images/post/1_kbflq2yypdzuzbdkwjq0g.jpeg?itok=pj0DJEiT");
+}
+
+
+
+.first {
+  background-color: rgba(138, 66, 105);
+  margin: -2px;
+}
+
+.second {
+  background-color: rgb(220, 237, 21);
+}
+
+.third {
+  background-color: rgb(10, 251, 85);
+}
+
+.forth {
+  background-color: rgb(165, 235, 242);
+}
+
+.fifth {
+  background-color: rgb(240, 147, 25);
+}
+
+.sixth {
+  background-color: rgb(242, 80, 80);
+}
+
+#skills {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#skills ul li {
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 200px;
+}
+
+#skills a {
+  text-decoration: none;
+  color: black;
+}
+
+.color {
+  color: black;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.red {
+  background-color: rgba(138, 66, 105);
+}
+
+.blue {
+  background-color: rgb(165, 235, 242);
+}
+
+.yellow {
+  background-color: rgb(220, 237, 21);
+}
+
+.purple {
+  background-color: rgb(242, 80, 80);
+}
+
+.green {
+  background-color: rgb(10, 251, 85);
+}
+
+.orange {
+  background-color: rgb(240, 147, 25)
+}
+
+section {
+  height: 300px;
+  padding: 30px;
+  padding-top: 40px;
+  margin-top: -24px;
+  margin-bottom: -22px;
+}
+
+
+
+#one {
+  background-color: rgba(138, 66, 105);
+}
+
+#two {
+  background-color: rgb(220, 237, 21);
+}
+
+#three {
+  background-color: rgb(10, 251, 85);
+}
+
+#four {
+  background-color: rgb(165, 235, 242);
+}
+
+#five {
+  background-color: rgb(240, 147, 25)
+}
+
+#six {
+  background-color: rgb(242, 80, 80);
+}
+
+p {
+  margin: 20px 0;
+  flex: 1;
+}
+
+footer {
+  background-color: #14203e;
+  display: flex;
+  padding: 40px 10%;
+}
+
+.footerlinks {
+  flex: 1;
+}
+
+.footerlinks ul li {
+  display: block;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.footerlinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerlinks a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+footer form {
+  flex: 1;
+}
+
+.footerform {
+  display: flex;
+}
+
+footer h3 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer label {
+  color: white;
+  width: 200px;
+  margin: 10px;
+}
+
+footer input {
+  display: block;
+  margin: 10px;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+button:hover {
+  background-color: darkorange;
+  color: #333;
+}
+
+#icon {
+  display: none;
+  position: fixed;
+  right: 1em;
+  bottom: 1.4em;
+}
+
+@media screen and (max-width:600px) {
+  header {
+    display: block;
+    height: 250px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+
+    margin-top:40px;
+  }
+
+
+  nav {
+    margin: 0;
+
+  }
+
+  .logo img {
+    margin-left: 50px;
+    width: 180px;
+  }
+
+  #container {
+    display: block;
+    padding:20px;
+  }
+
+  footer {
+    display: block;
+    width: 100%
+  }
+
+  .footerlinks {
+    display: none;
+  }
+
+  .footerform {
+    display: block;
+  }
+
+  footer input {
+    width: 100%;
+  }
+
+  footer h3 {
+    padding-left: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    width: auto;
+  }
+
+  main img{padding:20px 0;}
+
+  button {
+    margin: 20px 10px;
+  }
+}

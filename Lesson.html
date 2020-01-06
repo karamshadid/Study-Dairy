@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <title>Html Lesson</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.PNG" alt="logo">
+    </div>
+    <nav>
+
+      <ul>
+        <li><a href="#"> About me</a></li>
+        <li><a href="Lesson.html">HTML Lessons</a></li>
+        <li><a href="index.html">JS Lessons</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="sidebar">
+      <div class="dropdown">
+
+        <ul>
+          <li class="dropdown-btn"><a href="Clock/clock.html" target="iframe1">Clock</a></li>
+
+          <li class="dropdown-btn"><a href="Piano/Piano.html" target="iframe1">Piano</a></li>
+          <li class="dropdown-btn"><a href="Grid/Grid.html" target="iframe1">Grid</a></li>
+          <li class="dropdown-btn"><a href="Calculator/calculatorex.html" target="iframe1">Calculator</a></li>
+
+
+          <li class="dropdown-btn"><a href="Canvas/Canvas.html" target="iframe1">Canvas</a></li>
+          <li class="dropdown-btn"><a href="House/House.html" target="iframe1">House</a> </li>
+          <li class="dropdown-btn"><a href=" #">Portfolio</a> </li>
+          <ul>
+            <li><a href="Portfolio/index.html" target="iframe1">Unicorn</a></li>
+            <li><a href="Portfolio/cv.html" target="iframe1">CV</a></li>
+          </ul>
+
+
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="textarea">
+
+      <iframe src=" " name="iframe1"></iframe>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <p>@copyright</p>
+
+  </footer>
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>

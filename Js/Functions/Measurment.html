@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Measurment</title>
+</head>
+
+<body>
+  <h1>Measurment</h1>
+  <p> Make a program that transforms inches to centimeter.
+    1 inch = 2.54 cm The answer should be in this form:”x incs is y centimeter.”</p>
+  <form name="Measurment">
+    Inches <input type="Number" name="Inches">
+
+
+  </form>
+  <button type="button" onclick="myFunction()">Convert</button>
+  <p id="demo"> </p>
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80" readonly>  function myFunction() {
+      var inches = Number(document.forms["Measurment"]["Inches"].value);
+      var convert = inches * 2.54;
+      document.getElementById("demo").innerHTML = convert + " Centimeteres";
+</textarea>
+
+  <h3>Answer</h3>
+  <script>
+    function myFunction() {
+      var inches = Number(document.forms["Measurment"]["Inches"].value);
+      var convert = inches * 2.54;
+      document.getElementById("demo").innerHTML = convert + " Centimeteres";
+
+
+
+
+    }
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Average speed</title>
+</head>
+
+<body>
+  <h1>Calculate speed</h1>
+
+  <p> Make a program that calculates and prints out the average speed. Ask from the user distance and the time that was used.
+    With those values program calculates the average speed and prints it to the user.</p>
+  <form name="Average">
+    Distance <input type="number" name="distance"><br><br>
+    Time<input type="number" name="time">
+
+  </form>
+  <button type="button" onclick="myFunction()">Calculate</button>
+  <p id="demo"></p>
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80" readonly>function myFunction() {
+    var distance = Number(document.forms["Average"]["distance"].value);
+    var time = Number(document.forms["Average"]["time"].value);
+    var total = distance / time;
+    document.getElementById("demo").innerHTML = "The Average speed is " + total;
+  }</textarea>
+  <script>
+    function myFunction() {
+      var distance = Number(document.forms["Average"]["distance"].value);
+      var time = Number(document.forms["Average"]["time"].value);
+      var total = distance / time;
+      document.getElementById("demo").innerHTML = "The Average speed is " + total;
+    }
+  </script>
+
+</body>
+
+</html>

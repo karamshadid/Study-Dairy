@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Salary</title>
+</head>
+
+<body>
+  <h1>Total Salary</h1>
+  <p>4. Make a program that asks hourly salary and how many hours user worked on one day.<br>
+    With this information program calculates day’s salary. The salary is calculated as follows:<br>
+    - first 7 hours by hourly salary - next 2 hours 50% extra - rest of the hours 100% extra</p>
+
+
+  <form name="Salary">
+    Hours Worked <input type="number" id="hours">
+    Salary/Hour <input type="number" id="hourlySalary">
+    <button type="button" name="button" onclick="myFunction()">Calculate</button>
+
+  </form>
+  <p id="demo"></p>
+
+  <h2>Code Example</h2>
+  <textarea name="name" rows="8" cols="80" readonly>  function myFunction() {
+      var hours = Number(document.getElementById('hours').value);
+      var hourlySalary = Number(document.getElementById('hourlySalary').value);
+      var extrahours = hours - 7;
+      var extrahr = hours - 9;
+      var total;
+
+      if (hours <= 7) {
+        total = hours * hourlySalary;
+      } else if (hours > 7 && hours <= 9) {
+
+        total = (hours * hourlySalary) + (extrahours * (hourlySalary / 2));
+
+
+      } else {
+        total = (hours * hourlySalary) + (extrahours * (hourlySalary / 2)) + (extrahr * (hourlySalary * 2));
+
+      }
+
+      document.getElementById('demo').innerHTML = "Your salary will be " + total;
+    }</textarea>
+
+  <script>
+    function myFunction() {
+      var hours = Number(document.getElementById('hours').value);
+      var hourlySalary = Number(document.getElementById('hourlySalary').value);
+      var extrahours = hours - 7;
+      var extrahr = hours - 9;
+      var total;
+
+      if (hours <= 7) {
+        total = hours * hourlySalary;
+      } else if (hours > 7 && hours <= 9) {
+
+        total = (hours * hourlySalary) + (extrahours * (hourlySalary / 2));
+
+
+      } else {
+        total = (hours * hourlySalary) + (extrahours * (hourlySalary / 2)) + (extrahr * (hourlySalary * 2));
+
+      }
+
+      document.getElementById('demo').innerHTML = "Your salary will be " + total;
+    }
+  </script>
+
+</body>
+
+</html>

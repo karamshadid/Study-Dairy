@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>gasoline</title>
+</head>
+
+<body>
+  <h1>JS 1.1</h1>
+  <h2>How much gasoline you get?</h2>
+
+  <p> Make a program that asks the price of the gasoline and amount of money from the user.
+    The program calculates how much gasoline the user gets with the money. Result is printed to the user.</p>
+
+  <h2>Solution</h2>
+
+  <form name="gas">
+    <p>Gasoline price</p> <input type="number" name="price"><br><br>
+    <p>money</p><input type="number" name="money">
+
+  </form>
+  <button type="button" onclick="myFunction()">calculate</button>
+  <h3>Answer</h3>
+  <p>You get gasoline: liters</p><br>
+  <p id="demo"></p>
+  <h2>Code example</h2>
+  <textarea name="name" rows="8" cols="80">
+  <pre>function myFunction() {
+    var pricelitre = Number(document.forms["gas"]["price"].value);
+    var money = Number(document.forms["gas"]["money"].value);
+    var total = pricelitre / money;
+    document.getElementById("demo").innerHTML = "you are going to get " + total.string + " litres";
+    }</pre></textarea>
+  <script>
+    function myFunction() {
+      var pricelitre = Number(document.forms["gas"]["price"].value);
+      var money = Number(document.forms["gas"]["money"].value);
+      var total = pricelitre / money;
+      document.getElementById("demo").innerHTML = "you are going to get " + total.string + " litres";
+
+    }
+  </script>
+
+
+
+</body>
+
+</html>

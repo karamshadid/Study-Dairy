@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>BMI</title>
+</head>
+
+<body>
+  <h1>BMI</h1>
+  <p>4. Make a program that calculates body mass index. The BMI is defined as the body mass divided by the square of the body height,
+    and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.</p>
+  <form name="BMI">
+    <label>Height</label> <input type="number" name="height"><br>
+    <label>Weight</label><input type="number" name="weight"><br>
+
+
+  </form>
+  <button type="button" onclick="myFunction()">Calculate</button>
+
+  <p id="demo"> </p>
+  <h2>Code Example</h2>
+
+  <textarea name="name" rows="8" cols="80" readonly>  function myFunction(){
+    var weight = Number(document.forms["BMI"]["height"].value);
+    var height=Number(document.forms["BMI"]["weight"].value);
+    var total= weight/(height*height)*100;
+
+    (document.getElementById("demo").innerHTML= total + " is your BMI";
+
+
+    }</textarea>
+  <script>
+    function myFunction() {
+      var weight = Number(document.forms["BMI"]["height"].value);
+      var height = Number(document.forms["BMI"]["weight"].value);
+      var total = weight / (height * height) * 100;
+
+      (document.getElementById("demo").innerHTML = total + " is your BMI";
+
+
+      }
+  </script>
+</body>
+
+</html>
